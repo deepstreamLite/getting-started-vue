@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <link rel="stylesheet" href="css/app.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/deepstream.io-client-js/2.1.1/deepstream.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="group connectionState">
+      Connection-State is: <em id="connection-state">{{connectionState}}</em>
+    </div>
+    <my-record :ds="ds"></my-record>
+    <my-events :ds="ds"></my-events>
+    <my-rpc :ds="ds"></my-rpc>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
